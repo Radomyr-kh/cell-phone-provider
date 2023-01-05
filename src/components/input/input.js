@@ -16,9 +16,7 @@ const Input = () => {
     let codeValue = e.target.value.replaceAll(/\D/gi, '');
     console.log(codeValue);
 
-    // let inputCode = inputReference.current.value;
     let inputCode = inputReference.current.value.replaceAll(/\D/gi, '');
-    // let inputCodeTwo = inputTwoReference.current.value;
     let inputCodeTwo = inputTwoReference.current.value.replaceAll(/\D/gi, '');
 
     console.log(inputCode);
@@ -72,7 +70,6 @@ const Input = () => {
       <input
         type='text'
         data-testid='operator-input'
-        //   pattern='[0-9]+'
         maxLength={2}
         ref={inputReference}
         onInput={inputHandler}
@@ -81,7 +78,6 @@ const Input = () => {
       <input
         type='text'
         data-testid='phone-input'
-        //   pattern='[0-9]+'
         maxLength={7}
         ref={inputTwoReference}
         onInput={inputHandler}
